@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import type { InkeepCustomTriggerProps } from '@inkeep/widgets';
 
 // Inkeep AI Search Configuration
 // You'll need to replace these with your actual Inkeep configuration
@@ -30,7 +29,7 @@ const INKEEP_CONFIG = {
 };
 
 export function InkeepSearch() {
-  const [InkeepWidget, setInkeepWidget] = useState<any>(null);
+  const [InkeepWidget, setInkeepWidget] = useState<React.ComponentType<any> | null>(null);
 
   useEffect(() => {
     // Dynamically import Inkeep widget only on client-side
