@@ -1,7 +1,6 @@
 import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
 
-const config: DocsThemeConfig = {
+const config = {
   logo: <span><strong>Payvost</strong></span>,
   project: {
     link: 'https://github.com/payvost/payvost-docs',

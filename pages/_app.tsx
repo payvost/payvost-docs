@@ -7,7 +7,10 @@ import ChatGPTSearch from '../components/ChatGPTSearch'
 
 function MyApp({ Component, pageProps, pageMap }: AppProps & { pageMap: any }) {
   return (
-    <Layout {...themeConfig} pageMap={pageMap}>
+    <Layout
+      {...({ ...themeConfig, footer: (themeConfig as any)?.footer?.content ?? (themeConfig as any)?.footer } as any)}
+      pageMap={pageMap}
+    >
       <Component {...pageProps} />
       <ChatGPTSearch />
     </Layout>
