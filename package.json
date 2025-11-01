@@ -19,8 +19,8 @@
   "homepage": "https://github.com/payvost/payvost-docs#readme",
   "dependencies": {
     "next": "^14.2.0",
-    "nextra": "^3.0.0",
-    "nextra-theme-docs": "^3.0.0",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
     "openai": "^4.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -28,6 +28,6 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.4.0"
   }
 }

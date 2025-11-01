@@ -1,8 +1,14 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
+  // Nextra v4 configuration options
+  staticImage: true,
+  search: {
+    codeblocks: false
+  }
 })
 
-export default withNextra()
+export default withNextra({
+  // Next.js configuration
+  reactStrictMode: true
+})
