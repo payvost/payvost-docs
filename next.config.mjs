@@ -1,19 +1,16 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  // Nextra v4 configuration options
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.tsx',
+  // Nextra v2 configuration options
   staticImage: true,
-  search: {
+  flexsearch: {
     codeblocks: false
   }
 })
 
 export default withNextra({
   // Next.js configuration
-  reactStrictMode: true,
-  // Ensure Nextra server files are bundled so its loader can transform them
-  transpilePackages: [
-    'nextra',
-    'nextra-theme-docs'
-  ]
+  reactStrictMode: true
 })
