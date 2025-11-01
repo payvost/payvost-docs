@@ -9,9 +9,7 @@ const config = {
     link: 'https://discord.gg/payvost',
   },
   docsRepositoryBase: 'https://github.com/payvost/payvost-docs/tree/main',
-  footer: {
-    content: <span>© {new Date().getFullYear()} Payvost. All rights reserved.</span>,
-  },
+  footer: <span>© {new Date().getFullYear()} Payvost. All rights reserved.</span>,
   head: () => (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
