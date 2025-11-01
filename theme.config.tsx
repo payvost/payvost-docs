@@ -1,6 +1,5 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import InkeepSearch from './components/InkeepSearch'
 
 const config: DocsThemeConfig = {
   logo: <span><strong>Payvost</strong></span>,
@@ -22,9 +21,6 @@ const config: DocsThemeConfig = {
       <link rel="icon" href="/favicon.ico" />
     </>
   ),
-  search: {
-    component: <InkeepSearch />,
-  },
 }
 
 export default config

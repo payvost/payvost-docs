@@ -2,12 +2,12 @@
 
 Official developer documentation for [Payvost](https://payvost.com) payment platform.
 
-This documentation site is built with [Nextra](https://nextra.site), a Next.js-based documentation framework, and features AI-powered search using [Inkeep](https://inkeep.com).
+This documentation site is built with [Nextra](https://nextra.site), a Next.js-based documentation framework, and features AI-powered search using [OpenAI ChatGPT](https://openai.com).
 
 ## Features
 
 - 📚 **Developer Documentation** - Comprehensive guides and API references
-- 🔍 **AI-Powered Search** - Intelligent search powered by Inkeep AI
+- 🔍 **AI-Powered Search** - Intelligent search powered by ChatGPT AI
 - 🎨 **Modern UI** - Built with Nextra theme for optimal reading experience
 - 📱 **Responsive Design** - Works seamlessly on all devices
 - 🌙 **Dark Mode** - Built-in dark mode support
@@ -34,10 +34,10 @@ cd payvost-docs
 npm install --legacy-peer-deps
 ```
 
-3. (Optional) Set up Inkeep AI search:
+3. (Optional) Set up ChatGPT AI search:
 
    - Copy `.env.example` to `.env.local`
-   - Add your Inkeep credentials from [Inkeep Portal](https://portal.inkeep.com/)
+   - Add your ChatGPT credentials from [ChatGPT Portal](https://platform.openai.com/)
 
 4. Start the development server:
 
@@ -59,7 +59,7 @@ npm start
 ```
 payvost-docs/
 ├── components/       # React components
-│   ├── InkeepSearch.tsx  # Inkeep AI search integration
+│   ├── ChatGPTSearch.tsx  # ChatGPT AI search integration
 │   └── ...
 ├── pages/           # Documentation pages (MDX)
 │   ├── _app.tsx    # Custom Next.js App
@@ -71,28 +71,30 @@ payvost-docs/
 └── package.json
 ```
 
-## Inkeep AI Integration
+## ChatGPT AI Integration
 
-This documentation uses Inkeep for AI-powered search, similar to leading payment platforms like Stripe and PayPal. The integration provides:
+This documentation uses OpenAI's ChatGPT (GPT-4/GPT-4-Turbo) for AI-powered search and assistance. The integration provides:
 
-- Natural language search
-- Contextual answers
+- Natural language question answering
+- Conversational AI interface
 - Quick question suggestions
-- Real-time documentation indexing
+- Keyboard shortcuts (Cmd/Ctrl + K)
 
 ### Configuration
 
-To enable Inkeep search:
+To enable ChatGPT search:
 
-1. Sign up at [Inkeep Portal](https://portal.inkeep.com/)
-2. Create a new project and get your credentials
-3. Add them to `.env.local`:
+1. Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
+2. Add it to `.env.local`:
 
 ```env
-NEXT_PUBLIC_INKEEP_API_KEY=your_api_key
-NEXT_PUBLIC_INKEEP_INTEGRATION_ID=your_integration_id
-NEXT_PUBLIC_INKEEP_ORGANIZATION_ID=your_organization_id
+NEXT_PUBLIC_OPENAI_API_KEY=sk-...your_api_key_here
+# Or use server-side (more secure):
+# OPENAI_API_KEY=sk-...your_api_key_here
 ```
+
+For detailed setup instructions, see [CHATGPT_SETUP.md](CHATGPT_SETUP.md).
+
 
 ## Content Management
 
