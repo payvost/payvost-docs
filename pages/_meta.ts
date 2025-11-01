@@ -1,6 +1,5 @@
-{
+export default {
   "index": "Introduction",
-  "another": "Another Page",
   "advanced": "Advanced (A Folder)",
   "about": {
     "title": "About",
@@ -9,7 +8,7 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://payvost.com/contact",
     "newWindow": true
   }
 }
