@@ -10,5 +10,10 @@ const withNextra = nextra({
 
 export default withNextra({
   // Next.js configuration
-  reactStrictMode: true
+  reactStrictMode: true,
+  // Ensure Nextra server files are bundled so its loader can transform them
+  transpilePackages: [
+    'nextra',
+    'nextra-theme-docs'
+  ]
 })
